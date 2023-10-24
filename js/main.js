@@ -23,8 +23,7 @@ phones.forEach((ph) => {
     (window.screen.width > 800) ? (ph.href = `//web.whatsapp.com/send?phone=+${numero}&text=${texto}`) : (ph.href = `//api.whatsapp.com/send?phone=+${numero}&text=${texto}`)
 });
 
-$("#fli-comp").flickity({
-    cellAlign: 'left',
-    prevNextButtons: false,
-    watchCSS: true,
-});
+// $("#carousel").flickity({
+//     cellAlign: 'center',
+//     prevNextButtons: false,
+// });

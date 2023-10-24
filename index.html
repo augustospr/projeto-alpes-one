@@ -18,20 +18,93 @@
   <header class="header">
     <section class="cabecalho">
       <div class="container">
-        <div class="row">
-          <div class="header-box-button d-flex col-lg-7">
-            <button><img src="./img/svg/telefone.svg" alt="">(21) 2042-4442</button>
-            <button><img src="./img/svg/360.svg" alt="">TOUR VIRTUAL</button>
-            <button class="wpp"><img src="./img/svg/whatsapp.svg" alt="">WHATSAPP</button>
+        <div class="row align-items-center justify-content-between mx-0">
+
+          <div class="col-lg-9 d-lg-block d-none">
+            <div class="header-box-button d-flex col-lg-12 px-0">
+              <button><img src="./img/svg/telefone.svg" alt="">(21) 2042-4442</button>
+              <button><img src="./img/svg/360.svg" alt="">TOUR VIRTUAL</button>
+              <button class="wpp"><img src="./img/svg/whatsapp.svg" alt="">WHATSAPP</button>
+            </div><!-- header-box-button -->
+
+            <div class="header-box-letter-filter d-lg-flex d-none col-lg-12 px-0">
+              <a href="#">1</a>
+              <a href="#">2</a>
+              <a href="#">3</a>
+              <a href="#">4</a>
+              <a href="#">5</a>
+              <a href="#">7</a>
+              <a href="#">8</a>
+              <a href="#">X</a>
+              <a href="#">Z</a>
+              <a href="#">M</a>
+              <a href="#">i</a>
+              <a href="#">Plug-in-Hybrid</a>
+            </div><!-- header-box-letter-filter -->
           </div>
-        </div>
-      </div>
+
+          <div class="header-box-button-mobile col-8 d-lg-none d-block">
+            <button><img src="./img/svg/telefone.svg" alt="">(21) 2042-4442</button>
+          </div><!-- header-box-button-mobile -->
+
+          <div class="box-header-logo col-lg-2 col-3">
+            <img src="./img/logos/logo-bmw-rio.svg" alt="">
+          </div><!-- col-lg-4 -->
+
+        </div><!-- row -->
+
+
+      </div><!-- container -->
     </section>
   </header>
 
-  <section>
+  <div class="home">
+    <section class="box-contact-mobile d-lg-none d-flex">
+      <a href="#form-contact">Solicite uma cotação</a>
+    </section><!-- box-contact-mobile -->
 
-  </section>
+    <section class="hero">
+      <div class="container-fluid position-relative px-0">
+        <div class="position-relative col-lg-12 px-0">
+          <div id="carousel" class="carousel"
+            data-flickity='{ "draggable": false, "cellAlign": "left", "autoPlay": "5500" }'>
+            <div class="carousel-cell col-lg-12">
+              <img class="d-lg-block d-none" src="./img/banners/desktop-.png" alt="">
+              <img class="d-lg-none d-block" src="./img/banners/mobile-banner.png" alt="">
+            </div>
+            <div class="carousel-cell col-lg-12">
+              <img class="d-lg-block d-none" src="./img/banners/desktop-.png" alt="">
+              <img class="d-lg-none d-block" src="./img/banners/mobile-banner.png" alt="">
+            </div>
+            <div class="carousel-cell col-lg-12">
+              <img class="d-lg-block d-none" src="./img/banners/desktop-.png" alt="">
+              <img class="d-lg-none d-block" src="./img/banners/mobile-banner.png" alt="">
+            </div>
+          </div>
+        </div>
+
+        <div class="form d-lg-block d-none">
+          <form id="form-contact" class="form-contact">
+            <h3><img src="./img/svg/carro.svg" alt="">Solicitar cotação</h3>
+            <input name="nome" type="text" placeholder="Nome">
+            <input name="email" type="email" placeholder="E-mail">
+            <input name="telefone" type="tel" placeholder="Telefone">
+            <select name="modeloSelector">
+              <option value="">Modelo</option>
+              <option value="">Modelo 01</option>
+              <option value="">Modelo 02</option>
+              <option value="">Modelo 03</option>
+              <textarea name="mensagem" id="" cols="30" rows="3" placeholder="Mensagem"></textarea>
+            </select>
+            <div class="box-politica">
+              <input type="checkbox">
+              <label for="checkbox">Aceito a <b>Política de Privacidade</b></label>
+            </div>
+          </form>
+        </div>
+      </div>
+    </section><!-- hero -->
+  </div><!-- home -->
 
   <footer>
 
