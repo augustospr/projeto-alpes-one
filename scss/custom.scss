@@ -6,6 +6,60 @@ body {
   outline: 0 !important;
 }
 
+#cabecalho-mobile {
+
+  &.fixed {
+    background-color: #fff;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 10;
+  }
+}
+
+#cabecalho-desktop-fixed {
+  background-color: #fff;
+  width: 100%;
+  z-index: -10;
+  opacity: 0;
+  position: absolute;
+  top: 0px;
+  box-shadow: 0px 3px 6px #00000029;
+  transition: .3s;
+
+  &.fixed {
+    position: fixed;
+    top: 0px;
+    opacity: 1;
+    z-index: 10;
+  }
+
+  .box-logo {
+    margin-left: 30px;
+
+    img {
+      width: 50px;
+      height: 50px;
+    }
+  }
+
+  .box-button {
+    button {
+      background-color: #1C69D4;
+      border: 1px solid #1C69D4;
+      padding: 21px 70px;
+      font-weight: bold;
+      color: #fff;
+      transition: .3s;
+
+      &:hover {
+        background-color: #0351BE;
+        border: 1px solid #0351BE;
+      }
+    }
+  }
+}
+
 .cabecalho {
 
   .container {
@@ -32,10 +86,21 @@ body {
 
       font-weight: bold;
       font-size: 14px;
+      transition: .3s;
+
+      &:hover {
+        border: 1px solid #575757;
+        background-color: #575757;
+      }
 
       &.wpp {
         background-color: #25D366;
         border: 1px solid #25D366;
+
+        &:hover {
+          border: 1px solid #35AA61;
+          background-color: #35AA61;
+        }
       }
 
       img {
@@ -81,6 +146,12 @@ body {
       line-height: 19px;
       font-weight: bold;
       margin-right: 45px;
+      transition: .3s;
+
+      &:hover {
+        color: #1C69D4;
+        text-decoration: none;
+      }
 
       &:last-child {
         margin-right: 0px;
@@ -112,10 +183,17 @@ body {
 
 .home {
 
+  padding-top: 90px;
+
+  @media screen and (min-width: 992px) {
+    padding-top: 0px;
+  }
+
   .box-contact-mobile {
 
-    a {
+    button {
       background-color: #1C69D4;
+      border: 1px solid #1C69D4;
       color: #fff;
       font-size: 14px;
       line-height: 19px;
@@ -123,6 +201,12 @@ body {
       text-align: center;
       width: 100%;
       padding: 18px 0px;
+      transition: .3s;
+
+      &:hover {
+        background-color: #0351BE;
+        border: 1px solid #0351BE;
+      }
     }
   }
 
@@ -204,6 +288,10 @@ body {
           border-bottom: 1px solid #BBBBBB;
           padding-bottom: 8px;
           margin-bottom: 30px;
+
+          &:focus {
+            border-bottom: 2px solid #1C69D4;
+          }
         }
 
         textarea {
@@ -220,6 +308,16 @@ body {
         label {
           margin-bottom: 0px;
           font-size: 14px;
+
+          a {
+            color: #666666;
+            transition: .3s;
+
+            &:hover {
+              color: #1C69D4;
+              text-decoration: none;
+            }
+          }
         }
 
         button[type='submit'] {
@@ -229,6 +327,12 @@ body {
           padding: 12px 0px;
           font-weight: bold;
           color: #fff;
+          transition: .3s;
+
+          &:hover {
+            background-color: #0351BE;
+            border: 1px solid #0351BE;
+          }
         }
 
         .box-politica {
@@ -269,7 +373,7 @@ body {
       padding: 80px 0px;
     }
 
-    padding: 70px 0px;
+    padding: 59px 0px;
 
     .box-title {
 
@@ -285,19 +389,52 @@ body {
     .box-card {
       margin-bottom: 30px;
 
-      button {
-        background-color: #1C69D4;
-        border: 1px solid #1C69D4;
-        width: 100%;
-        padding: 12px 0px;
-        font-weight: bold;
-        color: #fff;
-        margin-bottom: 30px;
+      .box-button {
+        display: flex;
+        justify-content: space-between;
+
+        a {
+          width: 47%;
+
+          @media screen and (min-width: 992px) {
+            width: 100%;
+          }
+        }
+
+        button {
+          background-color: #1C69D4;
+          border: 1px solid #1C69D4;
+          width: 100%;
+          padding: 12px 0px;
+          font-weight: bold;
+          color: #fff;
+          margin-bottom: 30px;
+          transition: .3s;
+
+          &:hover {
+            background-color: #0351BE;
+            border: 1px solid #0351BE;
+          }
+
+          &.button-modal-form {
+            width: 47%;
+          }
+
+          &.button-ligar {
+            border: 1px solid #666666;
+            background-color: #666666;
+          }
+        }
       }
 
       img {
         margin-bottom: 16px;
         width: 100%;
+        transition: .3s;
+
+        &:hover {
+          opacity: .5;
+        }
       }
 
       h4 {
@@ -326,6 +463,12 @@ body {
           filter: invert(41%) sepia(0%) saturate(347%) hue-rotate(198deg) brightness(93%) contrast(84%);
           margin-right: 15px;
           margin-bottom: 0px;
+          transition: .3s;
+          cursor: pointer;
+
+          &:hover {
+            filter: invert(54%) sepia(68%) saturate(7989%) hue-rotate(209deg) brightness(75%) contrast(163%);
+          }
 
           &:last-child {
             margin-right: 0px;
@@ -358,11 +501,12 @@ footer {
       display: flex;
       justify-content: space-between;
       align-items: center;
-      padding: 40px 0px;
+      padding: 40px 0px 40px;
       flex-direction: column;
 
       @media screen and (min-width: 992px) {
         flex-direction: row;
+        padding: 40px 0px 80px;
       }
 
       .box-logo-image {
@@ -417,5 +561,204 @@ footer {
         }
       }
     }
+  }
+
+  .footer-fixed {
+    position: fixed;
+    bottom: 0px;
+    width: 100%;
+    background-color: #fff;
+    box-shadow: 0px -3px 6px #00000029;
+
+
+    .box-text {
+      display: flex;
+      align-items: center;
+      justify-content: end;
+      padding: 16px 0px;
+
+      .box-contact,
+      .box-tour {
+        a {
+          display: flex;
+          align-items: center;
+          margin-right: 30px;
+
+          p {
+            transition: .3s;
+          }
+
+          img {
+            transition: .3s;
+          }
+
+          &:hover {
+            p {
+              color: #0351BE;
+            }
+
+            img {
+              filter: invert(19%) sepia(44%) saturate(4989%) hue-rotate(209deg) brightness(97%) contrast(98%);
+            }
+
+            text-decoration: none;
+          }
+        }
+
+        p {
+          font-size: 14px;
+          color: #666666;
+          margin-bottom: 0px;
+          font-weight: bold;
+        }
+
+        img {
+          width: 20px;
+          height: 20px;
+          margin-right: 7px;
+          filter: invert(41%) sepia(0%) saturate(347%) hue-rotate(198deg) brightness(93%) contrast(84%);
+        }
+      }
+    }
+  }
+}
+
+.box-whatsapp {
+  background-color: #25D366;
+  border-radius: 50%;
+  padding: 10px;
+  position: fixed;
+  left: 20px;
+  bottom: 20px;
+  z-index: 10;
+
+  img {
+    width: 50px;
+    height: 50px;
+    filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(49deg) brightness(103%) contrast(103%);
+  }
+}
+
+.form-mobile-modal {
+
+  position: absolute;
+  opacity: 0;
+  z-index: -20;
+  top: 0px;
+  transition: .3s;
+
+  &.fixed {
+    position: fixed;
+    top: 0px;
+    width: 100%;
+    height: 100%;
+    background-color: #00000052;
+    z-index: 20;
+    opacity: 1;
+  }
+
+  .box-close-button {
+    width: 100%;
+
+    button {
+      width: 100%;
+      padding: 13px 0px;
+      border: 1px solid #666666;
+      background-color: #666666;
+      color: #fff;
+      font-weight: bold;
+    }
+  }
+
+  form {
+    background-color: #fff;
+    box-shadow: 0px 3px 6px #00000029;
+    padding: 30px 20px;
+    display: flex;
+    flex-direction: column;
+
+    input,
+    select,
+    textarea {
+      font-size: 14px;
+      border: none;
+      border-bottom: 1px solid #BBBBBB;
+      padding-bottom: 8px;
+      margin-bottom: 30px;
+
+      &:focus {
+        border-bottom: 1px solid #1C69D4;
+      }
+    }
+
+    textarea {
+      resize: none;
+    }
+
+    input[type='checkbox'] {
+      width: 15px;
+      height: 15px;
+      margin-right: 7px;
+      margin-bottom: 0px;
+    }
+
+    label {
+      margin-bottom: 0px;
+      font-size: 14px;
+
+      a {
+        color: #666666;
+        transition: .3s;
+
+        &:hover {
+          color: #1C69D4;
+          text-decoration: none;
+        }
+      }
+    }
+
+    button[type='submit'] {
+      background-color: #1C69D4;
+      border: 1px solid #1C69D4;
+      width: 100%;
+      padding: 12px 0px;
+      font-weight: bold;
+      color: #fff;
+      transition: .3s;
+
+      &:hover {
+        background-color: #0351BE;
+        border: 1px solid #0351BE;
+      }
+    }
+
+    .box-politica {
+      padding: 0px 7px;
+      margin-bottom: 19px;
+    }
+  }
+
+  .form-mobile-contact {
+
+    h3 {
+      font-size: 20px;
+      color: #000;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-bottom: 32px;
+
+      img {
+        width: 24px;
+        height: 24px;
+        margin-right: 11px;
+        filter: invert(33%) sepia(99%) saturate(1280%) hue-rotate(200deg) brightness(83%) contrast(100%);
+      }
+    }
+  }
+
+  .box-politica {
+    display: flex;
+    align-items: center;
   }
 }

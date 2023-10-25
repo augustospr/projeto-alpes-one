@@ -1,26 +1,26 @@
-// menu mobile
-const menu = $("#menu");
-
-$("#icone-menu").click(function() {
-    menu.fadeIn();
+// Abrindo menu mobile
+$(".button-modal-form").click(function () {
+    $(".form-mobile-modal").addClass("fixed");
 });
 
-$("#fechar-menu").click(function() {
-    menu.fadeOut();
+// Fechando menu mobile
+$(".box-close-button").click(function () {
+    $(".form-mobile-modal").removeClass("fixed");
+});
+
+$(window).scroll(function () {
+    var scroll = $(window).scrollTop();
+
+    if (scroll >= 170) {
+        $("#cabecalho-desktop-fixed").addClass("fixed");
+    } else {
+        $("#cabecalho-desktop-fixed").removeClass("fixed");
+    }
 });
 
 // background dos inputs
-$(".form-control").blur(function() {
+$(".form-control").blur(function () {
     $(this).css("background-color", "#E8F0FD");
-});
-
-
-// whatsapp web vs whatsapp cel
-const phones = document.querySelectorAll('a[fone="yes"]');
-phones.forEach((ph) => {
-    const numero = ph.getAttribute('number');
-    const texto = (ph.getAttribute('text')) ? (ph.getAttribute('text')) : ('');
-    (window.screen.width > 800) ? (ph.href = `//web.whatsapp.com/send?phone=+${numero}&text=${texto}`) : (ph.href = `//api.whatsapp.com/send?phone=+${numero}&text=${texto}`)
 });
 
 // $("#carousel").flickity({

@@ -15,8 +15,14 @@
 </head>
 
 <body>
+  <div class="box-whatsapp d-lg-none d-inline-block">
+    <a href="">
+      <img src="./img/svg/whatsapp.svg" alt="whatsapp icone">
+    </a>
+  </div><!-- box-whatsapp -->
+
   <header class="header">
-    <section class="cabecalho" id="cabecalho">
+    <section class="cabecalho d-lg-block d-none" id="cabecalho">
       <div class="container">
         <div class="row align-items-center justify-content-between mx-0">
 
@@ -56,11 +62,42 @@
 
       </div><!-- container -->
     </section>
+
+    <section id="cabecalho-desktop-fixed" class="cabecalho-desktop-fixed d-lg-block d-none">
+      <div class="container-fluid">
+        <div class="row justify-content-between align-items-center">
+          <div class="box-logo">
+            <img src="./img/logos/logo-bmw-rio.svg" alt="">
+          </div>
+          <div class="box-button">
+            <button>Solicitar cotação</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="cabecalho d-lg-none d-block fixed" id="cabecalho-mobile">
+      <div class="container">
+        <div class="row align-items-center justify-content-between mx-0">
+
+          <div class="header-box-button-mobile col-8">
+            <button><img src="./img/svg/telefone.svg" alt="">(21) 2042-4442</button>
+          </div><!-- header-box-button-mobile -->
+
+          <div class="box-header-logo col-lg-2 col-3">
+            <img src="./img/logos/logo-bmw-rio.svg" alt="">
+          </div><!-- col-lg-4 -->
+
+        </div><!-- row -->
+
+
+      </div><!-- container -->
+    </section>
   </header>
 
   <div class="home">
     <section class="box-contact-mobile d-lg-none d-flex">
-      <a href="#form-contact">Solicite uma cotação</a>
+      <button class="button-modal-form">Solicite uma cotação</button>
     </section><!-- box-contact-mobile -->
 
     <section class="hero">
@@ -98,7 +135,7 @@
             </select>
             <div class="box-politica">
               <input type="checkbox">
-              <label for="checkbox">Aceito a <b>Política de Privacidade</b></label>
+              <label for="checkbox">Aceito a <a href="#"><b>Política de Privacidade</b></a></label>
             </div>
             <button type="submit">Enviar</button>
           </form>
@@ -117,9 +154,19 @@
             <div class="box-card">
               <img src="./img/veiculos/serie1.png" alt="">
               <h4>BMW Série 1</h4>
-              <a href="#cabecalho">
-                <button>Cotação</button>
-              </a>
+
+              <div class="box-button">
+                <a href="#cabecalho" class="d-lg-block d-none">
+                  <button>Cotação</button>
+                </a>
+
+                <button class="button-modal-form d-lg-none d-block">Cotação</button>
+
+                <a href="tel:+5534999999999" class="d-lg-none d-block">
+                  <button class="button-ligar">Ligar</button>
+                </a>
+              </div>
+
               <div class="box-share">
                 <p>Compartilhe:</p>
                 <img src="./img/svg/facebook.svg" alt="facebook icon">
@@ -132,9 +179,17 @@
             <div class="box-card">
               <img src="./img/veiculos/m3.png" alt="">
               <h4>BMW M3 Competition</h4>
-              <a href="#cabecalho">
-                <button>Cotação</button>
-              </a>
+              <div class="box-button">
+                <a href="#cabecalho" class="d-lg-block d-none">
+                  <button>Cotação</button>
+                </a>
+
+                <button class="button-modal-form d-lg-none d-block">Cotação</button>
+
+                <a href="tel:+5534999999999" class="d-lg-none d-block">
+                  <button class="button-ligar">Ligar</button>
+                </a>
+              </div>
               <div class="box-share">
                 <p>Compartilhe:</p>
                 <img src="./img/svg/facebook.svg" alt="facebook icon">
@@ -147,9 +202,17 @@
             <div class="box-card">
               <img src="./img/veiculos/m5.png" alt="">
               <h4>BMW M5</h4>
-              <a href="#cabecalho">
-                <button>Cotação</button>
-              </a>
+              <div class="box-button">
+                <a href="#cabecalho" class="d-lg-block d-none">
+                  <button>Cotação</button>
+                </a>
+
+                <button class="button-modal-form d-lg-none d-block">Cotação</button>
+
+                <a href="tel:+5534999999999" class="d-lg-none d-block">
+                  <button class="button-ligar">Ligar</button>
+                </a>
+              </div>
               <div class="box-share">
                 <p>Compartilhe:</p>
                 <img src="./img/svg/facebook.svg" alt="facebook icon">
@@ -162,9 +225,17 @@
             <div class="box-card">
               <img src="./img/veiculos/x2.png" alt="">
               <h4>BMW X2</h4>
-              <a href="#cabecalho">
-                <button>Cotação</button>
-              </a>
+              <div class="box-button">
+                <a href="#cabecalho" class="d-lg-block d-none">
+                  <button>Cotação</button>
+                </a>
+
+                <button class="button-modal-form d-lg-none d-block">Cotação</button>
+
+                <a href="tel:+5534999999999" class="d-lg-none d-block">
+                  <button class="button-ligar">Ligar</button>
+                </a>
+              </div>
               <div class="box-share">
                 <p>Compartilhe:</p>
                 <img src="./img/svg/facebook.svg" alt="facebook icon">
@@ -177,9 +248,17 @@
             <div class="box-card">
               <img src="./img/veiculos/serie-4.png" alt="">
               <h4>BMW Série 4</h4>
-              <a href="#cabecalho">
-                <button>Cotação</button>
-              </a>
+              <div class="box-button">
+                <a href="#cabecalho" class="d-lg-block d-none">
+                  <button>Cotação</button>
+                </a>
+
+                <button class="button-modal-form d-lg-none d-block">Cotação</button>
+
+                <a href="tel:+5534999999999" class="d-lg-none d-block">
+                  <button class="button-ligar">Ligar</button>
+                </a>
+              </div>
               <div class="box-share">
                 <p>Compartilhe:</p>
                 <img src="./img/svg/facebook.svg" alt="facebook icon">
@@ -192,9 +271,17 @@
             <div class="box-card">
               <img src="./img/veiculos/serie-3.png" alt="">
               <h4>BMW Série 3</h4>
-              <a href="#cabecalho">
-                <button>Cotação</button>
-              </a>
+              <div class="box-button">
+                <a href="#cabecalho" class="d-lg-block d-none">
+                  <button>Cotação</button>
+                </a>
+
+                <button class="button-modal-form d-lg-none d-block">Cotação</button>
+
+                <a href="tel:+5534999999999" class="d-lg-none d-block">
+                  <button class="button-ligar">Ligar</button>
+                </a>
+              </div>
               <div class="box-share">
                 <p>Compartilhe:</p>
                 <img src="./img/svg/facebook.svg" alt="facebook icon">
@@ -207,9 +294,17 @@
             <div class="box-card">
               <img src="./img/veiculos/z4.png" alt="">
               <h4>BMW Z4</h4>
-              <a href="#cabecalho">
-                <button>Cotação</button>
-              </a>
+              <div class="box-button">
+                <a href="#cabecalho" class="d-lg-block d-none">
+                  <button>Cotação</button>
+                </a>
+
+                <button class="button-modal-form d-lg-none d-block">Cotação</button>
+
+                <a href="tel:+5534999999999" class="d-lg-none d-block">
+                  <button class="button-ligar">Ligar</button>
+                </a>
+              </div>
               <div class="box-share">
                 <p>Compartilhe:</p>
                 <img src="./img/svg/facebook.svg" alt="facebook icon">
@@ -222,9 +317,17 @@
             <div class="box-card">
               <img src="./img/veiculos/serie2.png" alt="">
               <h4>BMW Série 2</h4>
-              <a href="#cabecalho">
-                <button>Cotação</button>
-              </a>
+              <div class="box-button">
+                <a href="#cabecalho" class="d-lg-block d-none">
+                  <button>Cotação</button>
+                </a>
+
+                <button class="button-modal-form d-lg-none d-block">Cotação</button>
+
+                <a href="tel:+5534999999999" class="d-lg-none d-block">
+                  <button class="button-ligar">Ligar</button>
+                </a>
+              </div>
               <div class="box-share">
                 <p>Compartilhe:</p>
                 <img src="./img/svg/facebook.svg" alt="facebook icon">
@@ -235,6 +338,36 @@
         </div>
       </div>
     </section><!-- cars-section -->
+
+    <div id="modal-mobile-form" class="modal-mobile-form d-lg-none d-block">
+      <div class="container">
+        <div class="row">
+          <div class="form-mobile-modal">
+            <div class="box-close-button">
+              <button>Minimizar</button>
+            </div>
+            <form id="form-modal-contact" class="form-mobile-contact">
+              <h3><img src="./img/svg/carro.svg" alt="">Solicitar cotação</h3>
+              <input name="nome" type="text" placeholder="Nome" required>
+              <input name="email" type="email" placeholder="E-mail" required>
+              <input name="telefone" type="tel" placeholder="Telefone" required>
+              <select name="modeloSelector">
+                <option value="">Modelo</option>
+                <option value="">Modelo 01</option>
+                <option value="">Modelo 02</option>
+                <option value="">Modelo 03</option>
+                <textarea name="mensagem" id="" cols="30" rows="2" placeholder="Mensagem"></textarea>
+              </select>
+              <div class="box-politica">
+                <input type="checkbox">
+                <label for="checkbox">Aceito a <a href="#"><b>Política de Privacidade</b></a></label>
+              </div>
+              <button type="submit">Enviar</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
 
   </div><!-- home -->
 
@@ -262,6 +395,27 @@
             <div class="box-alpes">
               <p>Feito por:</p>
               <img src="./img/logos/logo-alpes.png" alt="">
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="footer-fixed" class="footer-fixed d-lg-block d-none">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="box-text col-lg-12">
+            <div class="box-contact">
+              <a href="tel:+5534999999999">
+                <img src="./img/svg/telefone.svg" alt="">
+                <p>(21) 2042-4442</p>
+              </a>
+            </div>
+            <div class="box-tour">
+              <a href="#">
+                <img src="./img/svg/360.svg" alt="">
+                <p>TOUR VIRTUAL</p>
+              </a>
             </div>
           </div>
         </div>
