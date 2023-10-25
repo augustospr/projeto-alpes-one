@@ -22,13 +22,14 @@ Nesse projeto você deverá rodar:
 
 ### `npm install`
 
-Rodando este código na pasta inicial do projeto através do terminal, ele irá baixar o node_modules e todas as dependâncias necessárias para dar start no projeto.
+Rodando este código na pasta inicial do projeto através do terminal, ele irá baixar o 'node_modules' e algumas dependâncias necessárias para dar start no projeto.
 
 ### `npm start`
 
-Runs the app in the development mode.\
 Rodando este código você entrará no modo desenvolvedor e conseguirá ver e editar o projeto.
 Abrirá [http://localhost:3000](http://localhost:3000) e com isso você verá o conteúdo.
 
 A página vai recarregar toda vez que ocorrer mudanças no projeto, seja na estrutura ou na estilização.
 Se caso houver erros você poderá ver eles no console do terminal.
+
+Para somente visualizar o projeto, basta abrir o arquivo index.html no seu navegador.
