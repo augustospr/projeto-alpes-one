@@ -16,7 +16,7 @@
 
 <body>
   <header class="header">
-    <section class="cabecalho">
+    <section class="cabecalho" id="cabecalho">
       <div class="container">
         <div class="row align-items-center justify-content-between mx-0">
 
@@ -86,24 +86,156 @@
         <div class="form d-lg-block d-none">
           <form id="form-contact" class="form-contact">
             <h3><img src="./img/svg/carro.svg" alt="">Solicitar cotação</h3>
-            <input name="nome" type="text" placeholder="Nome">
-            <input name="email" type="email" placeholder="E-mail">
-            <input name="telefone" type="tel" placeholder="Telefone">
+            <input name="nome" type="text" placeholder="Nome" required>
+            <input name="email" type="email" placeholder="E-mail" required>
+            <input name="telefone" type="tel" placeholder="Telefone" required>
             <select name="modeloSelector">
               <option value="">Modelo</option>
               <option value="">Modelo 01</option>
               <option value="">Modelo 02</option>
               <option value="">Modelo 03</option>
-              <textarea name="mensagem" id="" cols="30" rows="3" placeholder="Mensagem"></textarea>
+              <textarea name="mensagem" id="" cols="30" rows="2" placeholder="Mensagem"></textarea>
             </select>
             <div class="box-politica">
               <input type="checkbox">
               <label for="checkbox">Aceito a <b>Política de Privacidade</b></label>
             </div>
+            <button type="submit">Enviar</button>
           </form>
         </div>
       </div>
     </section><!-- hero -->
+
+    <section class="cars-section" id="cars-section">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="box-title text-center col-lg-12">
+            <h1>ESCOLHA SEU BMW</h1>
+          </div>
+
+          <div class="col-lg-3">
+            <div class="box-card">
+              <img src="./img/veiculos/serie1.png" alt="">
+              <h4>BMW Série 1</h4>
+              <a href="#cabecalho">
+                <button>Cotação</button>
+              </a>
+              <div class="box-share">
+                <p>Compartilhe:</p>
+                <img src="./img/svg/facebook.svg" alt="facebook icon">
+                <img src="./img/svg/whatsapp.svg" alt="whatsapp icon">
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-3">
+            <div class="box-card">
+              <img src="./img/veiculos/m3.png" alt="">
+              <h4>BMW M3 Competition</h4>
+              <a href="#cabecalho">
+                <button>Cotação</button>
+              </a>
+              <div class="box-share">
+                <p>Compartilhe:</p>
+                <img src="./img/svg/facebook.svg" alt="facebook icon">
+                <img src="./img/svg/whatsapp.svg" alt="whatsapp icon">
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-3">
+            <div class="box-card">
+              <img src="./img/veiculos/m5.png" alt="">
+              <h4>BMW M5</h4>
+              <a href="#cabecalho">
+                <button>Cotação</button>
+              </a>
+              <div class="box-share">
+                <p>Compartilhe:</p>
+                <img src="./img/svg/facebook.svg" alt="facebook icon">
+                <img src="./img/svg/whatsapp.svg" alt="whatsapp icon">
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-3">
+            <div class="box-card">
+              <img src="./img/veiculos/x2.png" alt="">
+              <h4>BMW X2</h4>
+              <a href="#cabecalho">
+                <button>Cotação</button>
+              </a>
+              <div class="box-share">
+                <p>Compartilhe:</p>
+                <img src="./img/svg/facebook.svg" alt="facebook icon">
+                <img src="./img/svg/whatsapp.svg" alt="whatsapp icon">
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-3">
+            <div class="box-card">
+              <img src="./img/veiculos/serie-4.png" alt="">
+              <h4>BMW Série 4</h4>
+              <a href="#cabecalho">
+                <button>Cotação</button>
+              </a>
+              <div class="box-share">
+                <p>Compartilhe:</p>
+                <img src="./img/svg/facebook.svg" alt="facebook icon">
+                <img src="./img/svg/whatsapp.svg" alt="whatsapp icon">
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-3">
+            <div class="box-card">
+              <img src="./img/veiculos/serie-3.png" alt="">
+              <h4>BMW Série 3</h4>
+              <a href="#cabecalho">
+                <button>Cotação</button>
+              </a>
+              <div class="box-share">
+                <p>Compartilhe:</p>
+                <img src="./img/svg/facebook.svg" alt="facebook icon">
+                <img src="./img/svg/whatsapp.svg" alt="whatsapp icon">
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-3">
+            <div class="box-card">
+              <img src="./img/veiculos/z4.png" alt="">
+              <h4>BMW Z4</h4>
+              <a href="#cabecalho">
+                <button>Cotação</button>
+              </a>
+              <div class="box-share">
+                <p>Compartilhe:</p>
+                <img src="./img/svg/facebook.svg" alt="facebook icon">
+                <img src="./img/svg/whatsapp.svg" alt="whatsapp icon">
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-3">
+            <div class="box-card">
+              <img src="./img/veiculos/serie2.png" alt="">
+              <h4>BMW Série 2</h4>
+              <a href="#cabecalho">
+                <button>Cotação</button>
+              </a>
+              <div class="box-share">
+                <p>Compartilhe:</p>
+                <img src="./img/svg/facebook.svg" alt="facebook icon">
+                <img src="./img/svg/whatsapp.svg" alt="whatsapp icon">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section><!-- cars-section -->
+
   </div><!-- home -->
 
   <footer>

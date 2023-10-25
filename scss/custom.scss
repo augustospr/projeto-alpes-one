@@ -2,6 +2,10 @@ body {
   box-sizing: border-box;
 }
 
+*:focus {
+  outline: 0 !important;
+}
+
 .cabecalho {
 
   .container {
@@ -215,6 +219,20 @@ body {
           margin-bottom: 0px;
           font-size: 14px;
         }
+
+        button[type='submit'] {
+          background-color: #1C69D4;
+          border: 1px solid #1C69D4;
+          width: 100%;
+          padding: 12px 0px;
+          font-weight: bold;
+          color: #fff;
+        }
+
+        .box-politica {
+          padding: 0px 7px;
+          margin-bottom: 19px;
+        }
       }
 
       .form-contact {
@@ -230,8 +248,8 @@ body {
           img {
             width: 24px;
             height: 24px;
-            filter: invert(33%) sepia(99%) saturate(1280%) hue-rotate(200deg) brightness(83%) contrast(100%);
             margin-right: 11px;
+            filter: invert(33%) sepia(99%) saturate(1280%) hue-rotate(200deg) brightness(83%) contrast(100%);
           }
         }
       }
@@ -239,6 +257,78 @@ body {
       .box-politica {
         display: flex;
         align-items: center;
+      }
+    }
+  }
+
+  .cars-section {
+
+    @media screen and (min-width: 992px) {
+      padding: 80px 0px;
+    }
+    
+    padding: 70px 0px;
+
+    .box-title {
+
+      h1 {
+        color: #262626;
+        font-size: 40px;
+        line-height: 48px;
+        text-transform: uppercase;
+        margin-bottom: 60px;
+      }
+    }
+
+    .box-card {
+      margin-bottom: 30px;
+
+      button {
+        background-color: #1C69D4;
+        border: 1px solid #1C69D4;
+        width: 100%;
+        padding: 12px 0px;
+        font-weight: bold;
+        color: #fff;
+        margin-bottom: 30px;
+      }
+
+      img {
+        margin-bottom: 16px;
+        width: 100%;
+      }
+
+      h4 {
+        color: #262626;
+        font-size: 20px;
+        line-height: 26px;
+        margin-bottom: 24px;
+        font-weight: 500;
+      }
+
+      .box-share {
+        display: flex;
+        align-items: center;
+
+        p {
+          font-size: 12px;
+          line-height: 15px;
+          color: #262626;
+          margin-right: 15px;
+          margin-bottom: 0px;
+        }
+
+        img {
+          width: 22px;
+          height: 22px;
+          filter: invert(41%) sepia(0%) saturate(347%) hue-rotate(198deg) brightness(93%) contrast(84%);
+          margin-right: 15px;
+          margin-bottom: 0px;
+
+          &:last-child {
+            margin-right: 0px;
+          }
+        }
       }
     }
   }
